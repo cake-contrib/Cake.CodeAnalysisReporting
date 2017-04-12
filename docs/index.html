@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/Cake.CodeAnalysisReporting/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Cake.CodeAnalysisReporting/assets/img/favicon.ico" type="image/x-icon">
-        <title>Docs - Cake.CodeAnalysisReporting</title>
+        <title>Docs - Documentation</title>
         <link href="/Cake.CodeAnalysisReporting/assets/css/mermaid.css" rel="stylesheet">
         <link href="/Cake.CodeAnalysisReporting/assets/css/highlight.css" rel="stylesheet">
         <link href="/Cake.CodeAnalysisReporting/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
@@ -31,7 +31,7 @@
 
         
     </head>
-    <body class="hold-transition wyam layout-boxed layout-top-nav no-gutter">    
+    <body class="hold-transition wyam layout-boxed  ">    
         <div class="top-banner"></div>
         <div class="wrapper with-container">
             <!-- Header -->
@@ -43,6 +43,10 @@
                          
                 <nav class="navbar navbar-static-top" role="navigation">
                     <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
                                         
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
@@ -54,7 +58,7 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
-                                    <li><a href="/Cake.CodeAnalysisReporting/docs">Documentation</a></li>
+                                    <li class="active"><a href="/Cake.CodeAnalysisReporting/docs">Documentation</a></li>
         <li><a href="/Cake.CodeAnalysisReporting/api">API</a></li>
  
                         </ul>       
@@ -66,7 +70,7 @@
             </header>
             
             <!-- Left side column. contains the logo and sidebar -->
-            <aside class="main-sidebar hidden">
+            <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
     <div id="infobar-headings"></div>
@@ -77,6 +81,33 @@
 
                     <ul class="sidebar-menu">
                         
+                <li class="treeview">
+                    <a href="/Cake.CodeAnalysisReporting/docs/usage">Usage</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li><a href="/Cake.CodeAnalysisReporting/docs/usage/examples">Examples</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/Cake.CodeAnalysisReporting/docs/reports">Reports</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li class="treeview">
+                    <a href="/Cake.CodeAnalysisReporting/docs/reports/msbuild">MSBuild</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li class="treeview">
+                    <a href="/Cake.CodeAnalysisReporting/docs/reports/msbuild/xmlfilelogger">XmlFileLogger</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li><a href="/Cake.CodeAnalysisReporting/docs/reports/msbuild/xmlfilelogger/msbuild-xmlfilelogger-by-assembly">Grouped By Assembly</a></li>
+                <li><a href="/Cake.CodeAnalysisReporting/docs/reports/msbuild/xmlfilelogger/msbuild-xmlfilelogger-by-rule">Grouped By Rule Number</a></li>
+
+                    </ul>
+                </li>
+
+                    </ul>
+                </li>
+
+                    </ul>
+                </li>
 
                     </ul>
                 </section>                
@@ -89,16 +120,48 @@
 
 
 	<section class="content-header">
-		<h1>Cake.CodeAnalysisReporting</h1>
+		<h1>Documentation</h1>
 	</section>
 	<section class="content">
-		
-<div class="container">				
-	<h1>What is it?</h1>
-    <p>
-        The Code Analysis Reporting Addin for <a href="http://cakebuild.net/">Cake</a> allows you to generated reports from code analysis logs.
-    </p>
-</div>
+		<p>This user guide, like Cake.CodeAnalysisReporting itself, is under very active development. Some parts of it aren't 
+documented as completely as they need to be, but we gladly accept your contributions.</p>
+
+<p>We need your help to improve the documentation for Cake.CodeAnalysisReporting, so if there is something that you 
+would like to add then you can edit the content directly on GitHub.</p>
+
+    <h1>Usage</h1>
+        <p>How to obtain, configure, and execute Cake.CodeAnalysisReporting.</p>
+			<div class="box">
+				<div class="box-body no-padding">
+					<table class="table table-striped table-hover two-cols-alt table-responsive">
+						
+						<tbody>
+								<tr>
+									<td><strong><a href="/Cake.CodeAnalysisReporting/docs/usage/examples">Examples</a></strong></td>
+									<td>
+									</td>
+								</tr>
+						</tbody>				
+					</table>
+				</div>
+			</div> 
+    <h1>Reports</h1>
+        <p>Available out of the box reports.</p>
+			<div class="box">
+				<div class="box-body no-padding">
+					<table class="table table-striped table-hover two-cols-alt table-responsive">
+						
+						<tbody>
+								<tr>
+									<td><strong><a href="/Cake.CodeAnalysisReporting/docs/reports/msbuild">MSBuild</a></strong></td>
+									<td>
+Reports for MSBuild log files.									</td>
+								</tr>
+						</tbody>				
+					</table>
+				</div>
+			</div> 
+
 	</section>
                 
             </div>           
