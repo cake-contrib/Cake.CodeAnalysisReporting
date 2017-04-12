@@ -1,7 +1,6 @@
 # Cake Code Analysis Reporting Addin
 
-This Addin for the Cake Build Automation System allows you to create reports for code analysis issues.
-More about Cake at http://cakebuild.net
+This Addin for the [Cake] Build Automation System allows you to create reports for code analysis issues.
 
 [![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/cake-contrib/Cake.CodeAnalysisReporting/blob/develop/LICENSE)
 
@@ -32,18 +31,9 @@ Come join in the conversation about Cake Code Analysis Reporting in our Gitter C
 
 [![Join the chat at https://gitter.im/cake-contrib/Lobby](https://badges.gitter.im/cake-contrib/Lobby.svg)](https://gitter.im/cake-contrib/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-## Build
+## Contributing
 
-To build this package we are using Cake.
+Contributions are welcome. See [Contribution Guidelines].
 
-On Windows PowerShell run:
-
-```powershell
-./build
-```
-
-On OSX/Linux run:
-
-```bash
-./build.sh
-```
+[Cake]: http://cakebuild.net
+[Contribution Guidelines]: CONTRIBUTING.md
