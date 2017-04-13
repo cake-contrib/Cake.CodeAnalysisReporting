@@ -8,7 +8,7 @@
     /// Contains functionality for creating report from code analysis log files.
     /// </summary>
     [CakeAliasCategory("Code Analysis Reporting")]
-    public class CodeAnalysisReportingAliases
+    public static class CodeAnalysisReportingAliases
     {
         /// <summary>
         /// Creates a report from a MsBuild logfile.
@@ -30,8 +30,8 @@
         /// </example>
         [CakeMethodAlias]
         [CakeAliasCategory("MsBuild")]
-        public void CreateMsBuildCodeAnalysisReport(
-            CakeContext context,
+        public static void CreateMsBuildCodeAnalysisReport(
+            this ICakeContext context,
             FilePath logFile,
             CodeAnalysisReport report,
             FilePath outputFile)
@@ -68,8 +68,8 @@
         /// </example>
         [CakeMethodAlias]
         [CakeAliasCategory("MsBuild")]
-        public string CreateMsBuildCodeAnalysisReport(
-            CakeContext context,
+        public static string CreateMsBuildCodeAnalysisReport(
+            this ICakeContext context,
             string logFileContent,
             string styleSheetContent)
         {
