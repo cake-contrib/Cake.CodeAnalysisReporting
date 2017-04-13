@@ -80,9 +80,50 @@
                 // Then
                 result.IsArgumentNullException("outputFile");
             }
+
+            [Theory]
+            [InlineData("Test.Cake.Prca.xml", CodeAnalysisReport.MsBuildXmlFileLoggerByAssembly)]
+            [InlineData("Test.Cake.Prca.xml", CodeAnalysisReport.MsBuildXmlFileLoggerByRule)]
+            public void Should_Return_Report(string logfileResourceName, CodeAnalysisReport report)
+            {
+                // Given
+                var logFileName = Path.GetTempFileName();
+                var environment = FakeEnvironment.CreateWindowsEnvironment();
+                var fileSystem = new FakeFileSystem(environment);
+
+                using (var ms = new MemoryStream())
+                using (var stream = this.GetType().Assembly.GetManifestResourceStream("Cake.CodeAnalysisReporting.Tests.Testfiles." + logfileResourceName))
+                {
+                    stream.CopyTo(ms);
+                    var data = ms.ToArray();
+
+                    fileSystem.CreateFile(logFileName, data);
+                }
+
+                var outputFileName = Path.GetTempFileName();
+                try
+                {
+                    // When
+                    MsBuildCodeAnalysisReporter.CreateCodeAnalysisReport(
+                        fileSystem,
+                        logFileName,
+                        report,
+                        outputFileName);
+
+                    // Then
+                    File.Exists(outputFileName).ShouldBe(true);
+                }
+                finally
+                {
+                    if (File.Exists(outputFileName))
+                    {
+                        File.Delete(outputFileName);
+                    }
+                }
+            }
         }
 
-        public sealed class TheCreateCodeAnalysisReportMethodWithFileConten
+        public sealed class TheCreateCodeAnalysisReportMethodWithFileContent
         {
             [Fact]
             public void Should_Throw_If_LogFileContent_Is_Null()

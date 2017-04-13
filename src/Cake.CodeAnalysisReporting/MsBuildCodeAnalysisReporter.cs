@@ -36,7 +36,7 @@
                 xmlStream = xmlFile.OpenRead(),
                 resultStream = resultFile.OpenWrite())
             {
-                var xslReader = XmlReader.Create(new StringReader(report.GetStyleSheetResourceName()));
+                var xslReader = XmlReader.Create(new StringReader(EmbeddedResourceHelper.GetReportStyleSheet(report.GetStyleSheetResourceName())));
                 var xmlReader = XmlReader.Create(xmlStream);
 
                 var resultWriter =
