@@ -34,29 +34,29 @@ var searchModule = function() {
 
     a({
         id:0,
-        title:"CodeAnalysisReport",
-        content:"CodeAnalysisReport",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:1,
         title:"CodeAnalysisReportingAliases",
         content:"CodeAnalysisReportingAliases",
         description:'',
         tags:''
     });
 
-    y({
-        url:'/Cake.CodeAnalysisReporting/Cake.CodeAnalysisReporting/api/Cake.CodeAnalysisReporting/CodeAnalysisReport',
+    a({
+        id:1,
         title:"CodeAnalysisReport",
-        description:""
+        content:"CodeAnalysisReport",
+        description:'',
+        tags:''
     });
 
     y({
         url:'/Cake.CodeAnalysisReporting/Cake.CodeAnalysisReporting/api/Cake.CodeAnalysisReporting/CodeAnalysisReportingAliases',
         title:"CodeAnalysisReportingAliases",
+        description:""
+    });
+
+    y({
+        url:'/Cake.CodeAnalysisReporting/Cake.CodeAnalysisReporting/api/Cake.CodeAnalysisReporting/CodeAnalysisReport',
+        title:"CodeAnalysisReport",
         description:""
     });
 
