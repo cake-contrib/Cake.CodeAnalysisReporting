@@ -23,7 +23,7 @@
         /// <![CDATA[
         ///     CreateMsBuildCodeAnalysisReport(
         ///         @"C:\build\msbuild.log",
-        ///         Report.MsBuildByAssembly,
+        ///         Report.MsBuildXmlFileLoggerByAssembly,
         ///         @"C:\build\issuesByAssembly.html");
         /// ]]>
         /// </code>

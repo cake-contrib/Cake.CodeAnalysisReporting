@@ -9,7 +9,7 @@ Task("create-report").Does(() =>
 {
     CreateMsBuildCodeAnalysisReport(
         @"C:\build\msbuild.log",
-        Report.MsBuildByAssembly,
+        CodeAnalysisReport.MsBuildXmlFileLoggerByAssembly,
         @"C:\build\issuesByAssembly.html");
 }
 ```
