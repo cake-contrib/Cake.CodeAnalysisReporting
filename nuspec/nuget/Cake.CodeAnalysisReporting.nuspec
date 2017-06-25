@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <id>Cake.CodeAnalysisReporting</id>
@@ -10,7 +10,7 @@
     <description>The Code Analysis Reporting Addin for Cake allows you to generate reports from issue found using any code analyzer or linter.</description>
     <licenseUrl>https://github.com/cake-contrib/Cake.CodeAnalysisReporting/blob/develop/LICENSE</licenseUrl>
     <projectUrl>http://cake-contrib.github.io/Cake.CodeAnalysisReporting/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/cake-build/graphics/aba74fb4cb5fe9454381af2cc70c870088229d5c/png/cake-medium.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/cake-contrib/graphics/a5cf0f881c390650144b2243ae551d5b9f836196/png/cake-contrib-medium.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <copyright>Copyright © 2017 BBT Software AG, Root/Zermatt, Switzerland</copyright>
     <tags>Cake Script CodeAnalysis Linting Reporting</tags>
