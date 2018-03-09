@@ -36,8 +36,19 @@
                 xmlStream = xmlFile.OpenRead(),
                 resultStream = resultFile.OpenWrite())
             {
-                var xslReader = XmlReader.Create(new StringReader(EmbeddedResourceHelper.GetReportStyleSheet(report.GetStyleSheetResourceName())));
-                var xmlReader = XmlReader.Create(xmlStream);
+                var xmlReaderSettings = new XmlReaderSettings()
+                {
+                    DtdProcessing = DtdProcessing.Prohibit
+                };
+
+                var xslReader =
+                    XmlReader.Create(
+                        new StringReader(EmbeddedResourceHelper.GetReportStyleSheet(report.GetStyleSheetResourceName())),
+                        xmlReaderSettings);
+                var xmlReader =
+                    XmlReader.Create(
+                        xmlStream,
+                        xmlReaderSettings);
 
                 var resultWriter =
                     XmlWriter.Create(
@@ -90,8 +101,13 @@
             xml.NotNull(nameof(xml));
             result.NotNull(nameof(result));
 
-            var xslXmlReader = XmlReader.Create(xsl);
-            var xmlXmlReader = XmlReader.Create(xml);
+            var xmlReaderSettings = new XmlReaderSettings()
+            {
+                DtdProcessing = DtdProcessing.Prohibit
+            };
+
+            var xslXmlReader = XmlReader.Create(xsl, xmlReaderSettings);
+            var xmlXmlReader = XmlReader.Create(xml, xmlReaderSettings);
             var resultXmlTextWriter = XmlWriter.Create(result, settings);
             Transform(xslXmlReader, xmlXmlReader, resultXmlTextWriter);
         }
