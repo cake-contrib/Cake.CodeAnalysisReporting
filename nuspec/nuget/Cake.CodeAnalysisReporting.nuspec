@@ -17,8 +17,8 @@
     <releaseNotes>https://github.com/cake-contrib/Cake.CodeAnalysisReporting/releases/tag/0.3.0</releaseNotes>
   </metadata>
   <files>
-    <file src="Cake.CodeAnalysisReporting.dll" target="lib\net45" />
-    <file src="Cake.CodeAnalysisReporting.pdb" target="lib\net45" />
-    <file src="Cake.CodeAnalysisReporting.xml" target="lib\net45" />
+    <file src="Cake.CodeAnalysisReporting.dll" target="lib\net46" />
+    <file src="Cake.CodeAnalysisReporting.pdb" target="lib\net46" />
+    <file src="Cake.CodeAnalysisReporting.xml" target="lib\net46" />
   </files>
 </package>
