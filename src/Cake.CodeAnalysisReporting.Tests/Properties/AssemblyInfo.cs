@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Cake.CodeAnalysisReporting.Tests")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Cake Code Analysis Reporting Addin")]
+[assembly: AssemblyDescription("Tests for Cake Code Analysis Reporting Addin.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Cake.CodeAnalysisReporting.Tests")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyCompany("BBT Software AG")]
+[assembly: AssemblyProduct("Cake Code Analysis Reporting Addin")]
+[assembly: AssemblyCopyright("Copyright © BBT Software AG, Root/Zermatt, Switzerland")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
