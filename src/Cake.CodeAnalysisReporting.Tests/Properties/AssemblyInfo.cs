@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Cake.CodeAnalysisReporting.Tests")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyCopyright("Copyright © BBT Software AG, Root/Zermatt, Switzerland")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
