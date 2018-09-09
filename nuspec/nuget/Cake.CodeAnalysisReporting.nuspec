@@ -2,12 +2,18 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <id>Cake.CodeAnalysisReporting</id>
-    <title>Cake.CodeAnalysisReporting</title>
+    <title>[Deprecated]</title>
     <version>0.0.0</version>
     <authors>BBT Software AG</authors>
     <owners>bbtsoftware, pascalberger, cake-contrib</owners>
-    <summary>Code Analysis Reporting Addin for Cake Build Automation System</summary>
-    <description>The Code Analysis Reporting Addin for Cake allows you to generate reports from issue found using any code analyzer or linter.</description>
+    <summary>This addin is no longer maintained. Please use [Cake.Issues](https://github.com/cake-contrib/Cake.Issues), [Cake.Issues.Reporting](https://github.com/cake-contrib/Cake.Issues.Reporting) and [Cake.Issues.Reporting.Generic](https://github.com/cake-contrib/Cake.Issues.Reporting.Generic) instead.</summary>
+    <description>
+This addin is no longer maintained
+
+Please use [Cake.Issues](https://github.com/cake-contrib/Cake.Issues), [Cake.Issues.Reporting](https://github.com/cake-contrib/Cake.Issues.Reporting) and
+[Cake.Issues.Reporting.Generic](https://github.com/cake-contrib/Cake.Issues.Reporting.Generic) instead.
+
+The Code Analysis Reporting Addin for Cake allows you to generate reports from issue found using any code analyzer or linter.</description>
     <licenseUrl>https://github.com/cake-contrib/Cake.CodeAnalysisReporting/blob/develop/LICENSE</licenseUrl>
     <projectUrl>http://cake-contrib.github.io/Cake.CodeAnalysisReporting/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/cake-contrib/graphics/a5cf0f881c390650144b2243ae551d5b9f836196/png/cake-contrib-medium.png</iconUrl>
